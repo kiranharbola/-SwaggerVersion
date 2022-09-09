@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ankitsahu\\source\\repos\\testversioning\\testversioning\\testversioning.csproj": {}
+    "D:\\Kiran\\testversioning\\testversioning\\testversioning.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ankitsahu\\source\\repos\\testversioning\\testversioning\\testversioning.csproj": {
+    "D:\\Kiran\\testversioning\\testversioning\\testversioning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ankitsahu\\source\\repos\\testversioning\\testversioning\\testversioning.csproj",
+        "projectUniqueName": "D:\\Kiran\\testversioning\\testversioning\\testversioning.csproj",
         "projectName": "testversioning",
-        "projectPath": "C:\\Users\\ankitsahu\\source\\repos\\testversioning\\testversioning\\testversioning.csproj",
+        "projectPath": "D:\\Kiran\\testversioning\\testversioning\\testversioning.csproj",
         "packagesPath": "C:\\Users\\ankitsahu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ankitsahu\\source\\repos\\testversioning\\testversioning\\obj\\",
+        "outputPath": "D:\\Kiran\\testversioning\\testversioning\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ankitsahu\\AppData\\Roaming\\NuGet\\NuGet.Config",

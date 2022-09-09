@@ -3,20 +3,30 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+ 
 using System.Threading.Tasks;
 
 namespace testversioning.Model
 {
     public class RemoveVersionFromParameter : IOperationFilter
     {
-         
+
         public void Apply(OpenApiOperation operation, OperationFilterContext context)
         {
-            if(operation.Parameters.Count>0)
+            //if (operation.Parameters.Count > 0)
+            //{
+            //    var versionparmeter = operation.Parameters.Single(p => p.Name == "version");
+            //    operation.Parameters.Remove(versionparmeter);
+            //}
+            if (operation.Parameters.Count==0)
             { 
-            var versionparmeter = operation.Parameters.Single(p => p.Name == "version");
-            operation.Parameters.Remove(versionparmeter);
+                operation.Parameters.Add(new OpenApiParameter { 
+                    Name="X-Version",
+                      In= ParameterLocation.Header,
+                        Required=true,
+                });
             }
+
         }
     }
 
@@ -29,6 +39,7 @@ namespace testversioning.Model
             foreach (var path in paths)
             {
                 var key = path.Key.Replace("v{version}", swaggerDoc.Info.Version);
+                key = path.Key;
                 var value = path.Value;
                 swaggerDoc.Paths.Add(key, value);
             }

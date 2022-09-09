@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace testversioning.Controllers
 {
    
-    [Route("api/v{version:apiVersion}/[controller]")]
+    [Route("api/[controller]")]
     [ApiVersion("1")]
     [ApiExplorerSettings(GroupName ="v1")]
     [ApiController]

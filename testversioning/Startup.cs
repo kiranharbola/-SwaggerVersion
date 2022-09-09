@@ -50,6 +50,7 @@ namespace testversioning
                 option.AssumeDefaultVersionWhenUnspecified = true;
                 option.DefaultApiVersion = ApiVersion.Default;
                 option.ApiVersionReader = new MediaTypeApiVersionReader("version");
+                option.ApiVersionReader = new HeaderApiVersionReader("X-Version");
             });
         }
 
